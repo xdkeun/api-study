@@ -1,0 +1,16 @@
+# https://yts.mx/api
+
+# get https://yts.mx/api/v2/list_movies.json
+
+# get https://yts.mx/api/v2/list_movies.json
+#     ?minimum_rating=8.5
+#     &sort_by=year
+#     &limit=5
+# 최소평점 8.5이상인 영화를 년도별로 정렬하여 보여주고, 5개의 자료만 보여줌
+
+get https://yts.mx/api/v2/list_movies.json
+    ?minimum_rating=8.5
+    &sort_by=year
+    &limit=5
+    &genre=Sci-Fi
+# 최소평점 8.5이상이면서 장르가 SF인 영화를 년도별로 정렬하여 보여주고, 5개의 자료만 보여줌
